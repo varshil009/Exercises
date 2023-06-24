@@ -1,0 +1,10 @@
+def temp():
+  temp_val = int(input('Enetr the temperature : '))
+  temp_unit = input('Enter the unit of the temperature : ')
+  if temp_unit.lower() == 'celcius':
+    celc = (temp_val - 32) * 5/9
+    return f'{temp_val} Fahrenhit to Celcius : {celc} degree C'
+  else:
+    fahr = 9/5 * temp_val + 32
+    return f'{temp_val} Celcius to fahrenhit : {fahr} degree F'
+temp()
